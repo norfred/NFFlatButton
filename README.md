@@ -1,7 +1,7 @@
 NFFlatButton
 ============
 
-Custom flat button 'à la Likepress' written in Swift.
+Custom flat button 'à la Letterpress' written in Swift.
 
 **`NFFlatButton` is a subclass of `UIButton`, so it works as a normal button!**
 
