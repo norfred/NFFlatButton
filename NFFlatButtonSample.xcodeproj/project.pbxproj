@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23681EED1A226D2600BAAFFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23681EEC1A226D2600BAAFFD /* AppDelegate.swift */; };
+		23681EEF1A226D2600BAAFFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23681EEE1A226D2600BAAFFD /* ViewController.swift */; };
+		23681EF21A226D2700BAAFFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23681EF01A226D2700BAAFFD /* Main.storyboard */; };
+		23681EF41A226D2700BAAFFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23681EF31A226D2700BAAFFD /* Images.xcassets */; };
+		23681F031A226D2900BAAFFD /* NFFlatButtonSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23681F021A226D2900BAAFFD /* NFFlatButtonSampleTests.swift */; };
+		23681F0D1A226EA500BAAFFD /* NFFlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23681F0C1A226EA500BAAFFD /* NFFlatButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23681EFD1A226D2900BAAFFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23681EDF1A226D2600BAAFFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23681EE61A226D2600BAAFFD;
+			remoteInfo = NFFlatButtonSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23681EE71A226D2600BAAFFD /* NFFlatButtonSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFFlatButtonSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23681EEB1A226D2600BAAFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23681EEC1A226D2600BAAFFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23681EEE1A226D2600BAAFFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23681EF11A226D2700BAAFFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23681EF31A226D2700BAAFFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		23681EFC1A226D2900BAAFFD /* NFFlatButtonSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NFFlatButtonSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23681F011A226D2900BAAFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23681F021A226D2900BAAFFD /* NFFlatButtonSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFFlatButtonSampleTests.swift; sourceTree = "<group>"; };
+		23681F0C1A226EA500BAAFFD /* NFFlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFFlatButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23681EE41A226D2600BAAFFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23681EF91A226D2900BAAFFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23681EDE1A226D2500BAAFFD = {
+			isa = PBXGroup;
+			children = (
+				23681EE91A226D2600BAAFFD /* NFFlatButtonSample */,
+				23681EFF1A226D2900BAAFFD /* NFFlatButtonSampleTests */,
+				23681EE81A226D2600BAAFFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23681EE81A226D2600BAAFFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23681EE71A226D2600BAAFFD /* NFFlatButtonSample.app */,
+				23681EFC1A226D2900BAAFFD /* NFFlatButtonSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23681EE91A226D2600BAAFFD /* NFFlatButtonSample */ = {
+			isa = PBXGroup;
+			children = (
+				23681F0E1A226EAF00BAAFFD /* Classes */,
+				23681EEE1A226D2600BAAFFD /* ViewController.swift */,
+				23681EF01A226D2700BAAFFD /* Main.storyboard */,
+				23681EEA1A226D2600BAAFFD /* Supporting Files */,
+			);
+			path = NFFlatButtonSample;
+			sourceTree = "<group>";
+		};
+		23681EEA1A226D2600BAAFFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23681EEC1A226D2600BAAFFD /* AppDelegate.swift */,
+				23681EF31A226D2700BAAFFD /* Images.xcassets */,
+				23681EEB1A226D2600BAAFFD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23681EFF1A226D2900BAAFFD /* NFFlatButtonSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				23681F021A226D2900BAAFFD /* NFFlatButtonSampleTests.swift */,
+				23681F001A226D2900BAAFFD /* Supporting Files */,
+			);
+			path = NFFlatButtonSampleTests;
+			sourceTree = "<group>";
+		};
+		23681F001A226D2900BAAFFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23681F011A226D2900BAAFFD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23681F0E1A226EAF00BAAFFD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				23681F0C1A226EA500BAAFFD /* NFFlatButton.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23681EE61A226D2600BAAFFD /* NFFlatButtonSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23681F061A226D2900BAAFFD /* Build configuration list for PBXNativeTarget "NFFlatButtonSample" */;
+			buildPhases = (
+				23681EE31A226D2600BAAFFD /* Sources */,
+				23681EE41A226D2600BAAFFD /* Frameworks */,
+				23681EE51A226D2600BAAFFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NFFlatButtonSample;
+			productName = NFFlatButtonSample;
+			productReference = 23681EE71A226D2600BAAFFD /* NFFlatButtonSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23681EFB1A226D2900BAAFFD /* NFFlatButtonSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23681F091A226D2900BAAFFD /* Build configuration list for PBXNativeTarget "NFFlatButtonSampleTests" */;
+			buildPhases = (
+				23681EF81A226D2900BAAFFD /* Sources */,
+				23681EF91A226D2900BAAFFD /* Frameworks */,
+				23681EFA1A226D2900BAAFFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23681EFE1A226D2900BAAFFD /* PBXTargetDependency */,
+			);
+			name = NFFlatButtonSampleTests;
+			productName = NFFlatButtonSampleTests;
+			productReference = 23681EFC1A226D2900BAAFFD /* NFFlatButtonSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23681EDF1A226D2600BAAFFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = norfred;
+				TargetAttributes = {
+					23681EE61A226D2600BAAFFD = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					23681EFB1A226D2900BAAFFD = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 23681EE61A226D2600BAAFFD;
+					};
+				};
+			};
+			buildConfigurationList = 23681EE21A226D2600BAAFFD /* Build configuration list for PBXProject "NFFlatButtonSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23681EDE1A226D2500BAAFFD;
+			productRefGroup = 23681EE81A226D2600BAAFFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23681EE61A226D2600BAAFFD /* NFFlatButtonSample */,
+				23681EFB1A226D2900BAAFFD /* NFFlatButtonSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23681EE51A226D2600BAAFFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23681EF21A226D2700BAAFFD /* Main.storyboard in Resources */,
+				23681EF41A226D2700BAAFFD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23681EFA1A226D2900BAAFFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23681EE31A226D2600BAAFFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23681EEF1A226D2600BAAFFD /* ViewController.swift in Sources */,
+				23681EED1A226D2600BAAFFD /* AppDelegate.swift in Sources */,
+				23681F0D1A226EA500BAAFFD /* NFFlatButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23681EF81A226D2900BAAFFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23681F031A226D2900BAAFFD /* NFFlatButtonSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23681EFE1A226D2900BAAFFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23681EE61A226D2600BAAFFD /* NFFlatButtonSample */;
+			targetProxy = 23681EFD1A226D2900BAAFFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23681EF01A226D2700BAAFFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23681EF11A226D2700BAAFFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23681F041A226D2900BAAFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23681F051A226D2900BAAFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23681F071A226D2900BAAFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NFFlatButtonSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		23681F081A226D2900BAAFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NFFlatButtonSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		23681F0A1A226D2900BAAFFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NFFlatButtonSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NFFlatButtonSample.app/NFFlatButtonSample";
+			};
+			name = Debug;
+		};
+		23681F0B1A226D2900BAAFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NFFlatButtonSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NFFlatButtonSample.app/NFFlatButtonSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23681EE21A226D2600BAAFFD /* Build configuration list for PBXProject "NFFlatButtonSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23681F041A226D2900BAAFFD /* Debug */,
+				23681F051A226D2900BAAFFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23681F061A226D2900BAAFFD /* Build configuration list for PBXNativeTarget "NFFlatButtonSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23681F071A226D2900BAAFFD /* Debug */,
+				23681F081A226D2900BAAFFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		23681F091A226D2900BAAFFD /* Build configuration list for PBXNativeTarget "NFFlatButtonSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23681F0A1A226D2900BAAFFD /* Debug */,
+				23681F0B1A226D2900BAAFFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23681EDF1A226D2600BAAFFD /* Project object */;
+}
