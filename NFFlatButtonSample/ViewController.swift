@@ -28,11 +28,10 @@ class ViewController: UIViewController {
         
         let buttons = [firstButton, secondButton, thirdButton, fourthButton]
         
-        for var index = 0; index < buttons.count; ++index {
-            var button = buttons[index]
-            button.setTitle("Button", forState: .Normal)
-            button.setTitleColor(colors[index], forState: .Normal)
-            button.titleLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 16.0)
+        for (index, button) in buttons.enumerated() {
+            button?.setTitle("Button", for: UIControlState())
+            button?.setTitleColor(colors[index], for: UIControlState())
+            button?.titleLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 16.0)
         }
     }
     

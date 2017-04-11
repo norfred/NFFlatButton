@@ -10,11 +10,11 @@ import QuartzCore
 
 class NFFlatButton: UIButton {
     
-    private var shapeLayer: CAShapeLayer = CAShapeLayer()
-    private var fillLayer: CAShapeLayer = CAShapeLayer()
+    fileprivate var shapeLayer: CAShapeLayer = CAShapeLayer()
+    fileprivate var fillLayer: CAShapeLayer = CAShapeLayer()
     
-    private var strokeColor: UIColor = UIColor()
-    private var fillColor: UIColor = UIColor()
+    fileprivate var strokeColor: UIColor = UIColor()
+    fileprivate var fillColor: UIColor = UIColor()
    
     var lineWidth: CGFloat!
     
@@ -23,36 +23,36 @@ class NFFlatButton: UIButton {
         commonInit()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
     
-    private func commonInit() {
-        self.strokeColor = self.titleColorForState(.Normal)!
-        self.fillColor = self.titleColorForState(.Normal)!
+    fileprivate func commonInit() {
+        self.strokeColor = self.titleColor(for: UIControlState())!
+        self.fillColor = self.titleColor(for: UIControlState())!
         
         self.lineWidth = 2.0
         
         setupShapeLayer()
     }
     
-    private func setupShapeLayer() {
+    fileprivate func setupShapeLayer() {
         
-        shapeLayer.bounds = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)
-        shapeLayer.position = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds))
+        shapeLayer.bounds = CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height)
+        shapeLayer.position = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
         
         var outlinePath: UIBezierPath
         
         // FIXME: Better way to draw a smooth circle
         if self.frame.size.width == self.frame.size.height {
-            outlinePath = UIBezierPath(ovalInRect: CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame)))
+            outlinePath = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
         } else {
-            outlinePath = UIBezierPath(roundedRect: CGRectInset(self.bounds, self.lineWidth, self.lineWidth), cornerRadius: self.bounds.size.height/2)
+            outlinePath = UIBezierPath(roundedRect: self.bounds.insetBy(dx: self.lineWidth, dy: self.lineWidth), cornerRadius: self.bounds.size.height/2)
         }
         
-        shapeLayer.path = outlinePath.CGPath
-        shapeLayer.strokeColor = self.strokeColor.CGColor
+        shapeLayer.path = outlinePath.cgPath
+        shapeLayer.strokeColor = self.strokeColor.cgColor
         shapeLayer.fillColor = nil
         shapeLayer.shadowColor = nil
         shapeLayer.lineWidth = self.lineWidth
@@ -60,16 +60,16 @@ class NFFlatButton: UIButton {
         self.layer.insertSublayer(shapeLayer, below: titleLabel?.layer)
     }
     
-    private func setupFillLayer() {
+    fileprivate func setupFillLayer() {
         
-        fillLayer.bounds = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)
-        fillLayer.position = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds))
+        fillLayer.bounds = CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height)
+        fillLayer.position = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
         
         var fillPath: UIBezierPath
-        fillPath = UIBezierPath(roundedRect: CGRectInset(self.bounds, self.lineWidth * 3, self.lineWidth * 3), cornerRadius: self.bounds.size.height/2)
+        fillPath = UIBezierPath(roundedRect: self.bounds.insetBy(dx: self.lineWidth * 3, dy: self.lineWidth * 3), cornerRadius: self.bounds.size.height/2)
         
-        fillLayer.path = fillPath.CGPath
-        fillLayer.fillColor = self.fillColor.CGColor
+        fillLayer.path = fillPath.cgPath
+        fillLayer.fillColor = self.fillColor.cgColor
         fillLayer.shadowColor = nil
         
         shapeLayer.addSublayer(fillLayer)
@@ -81,15 +81,15 @@ class NFFlatButton: UIButton {
         self.setNeedsDisplay()
     }
     
-    override var highlighted: Bool {
+    override var isHighlighted: Bool {
         
         get {
-            return super.highlighted
+            return super.isHighlighted
         }
         
         set(isHighlighted) {
             if (isHighlighted) {
-                self.titleLabel?.textColor = UIColor.whiteColor()
+                self.titleLabel?.textColor = UIColor.white
                 setupFillLayer()
             }
             else {
